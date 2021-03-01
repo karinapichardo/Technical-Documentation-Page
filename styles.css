@@ -68,14 +68,18 @@ section {
     margin: 15px;
 }
 
-code {
+pre {
     display: block;
     text-align: left;
     line-height: 2;
     background-color: #f7f7f7;
-    padding: 15px;
+    padding-left: 15px;
     margin: 10px;
     font-size: 12px;
+    position: relative;
+    word-break: normal;
+    border-radius: 5px;
+    white-space: pre-line;
 }
 
 .section-list {
