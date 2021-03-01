@@ -3,31 +3,43 @@
 }
 
 body {
-    font-family: 'Lato', 'Lucida Grande', Sans-Serif;
+    font-family: "Open Sans", Sans-Serif;
 }
 
-#title {
+#nav-links > li {
+    border-bottom: 1px solid #b9bdc4;
+}
+
+#nav-title {
     margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 h1 {
-    margin-left: -20px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+}
+
+p {
+    margin-left: 15px;
 }
 
 #navbar {
-    overflow-y: scroll;
+    overflow: scroll;
     height: 100%;
     position: fixed;
-    width: 300px;
+    width: 350px;
     left: 0;
-    /*    margin-bottom: 25px;*/
-
+    border-right: 3px solid #b9bdc4;
 }
 
 #nav-links {
     list-style-type: none;
     padding: 0;
-    font-size: 1.1em;
+    font-size: 16px;
+    color: #4D4E53;
 }
 
 #nav-links > li > .nav-link {
@@ -38,17 +50,71 @@ h1 {
     margin-left: 25px;
 }
 
+#nav-links > #reference-item {
+    border-bottom-style: none;
+}
+
 #main-doc {
     position: absolute;
     top: 45px;
     left: 350px;
-    margin: auto 50px 0 50px;
+    margin: -20px 50px 0 50px;
     line-height: 1.8;
-    font-size: 15px;
+    font-size: 16px;
+    color: #4D4E53;
 }
 
-.code-container {
-    background-color: #eee;
-    width: 1000px;
-    margin-left: 20px;
+section {
+    margin: 15px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.section-list {
+    margin-left: 35px;
+}
+
+#nested-list {
+    margin-left: 25px;
+}
+
+#nested-li {
+    list-style: none;
+}
+
+li {
+    margin-top: 15px;
+}
+
+@media (max-width: 780px) {
+    #nav-header {
+        text-align: center;
+    }
+
+    #main-doc {
+        position: absolute;
+        margin-left: -300px;
+        margin-top: 270px;
+    }
+
+    #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
 }
