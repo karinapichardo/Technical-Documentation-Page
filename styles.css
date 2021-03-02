@@ -16,7 +16,8 @@ body {
     margin-bottom: 20px;
 }
 
-h1 {
+#nav-title,
+h2 {
     font-weight: 400;
     font-size: 28px;
     color: #000;
